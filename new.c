@@ -121,7 +121,7 @@ void caseface1()
     for(int i=0; i<l; i++)
     {
         printf("%c",c[i]);
-        //usleep(100000);
+        usleep(100000);
     }
     printf("\n\t\t----------------------------\n");
 }
@@ -227,7 +227,7 @@ X:
     for(int i=0; i<l; i++)
     {
         printf("%c",c[i]);
-        //  usleep(100000);
+      usleep(100000);
     }
     printf("\n\t\t\t--------------------------------");
     printf("\n\t1.Add Contact\n");
@@ -264,7 +264,7 @@ X:
         for(int i=0; i<l; i++)
         {
             printf("%c",c[i]);
-            //usleep(100000);
+            usleep(100000);
         }
         printf("\n\t\t----------------------------\n");
         system("cls");
@@ -283,7 +283,7 @@ X:
             for(int i=0; i<l3; i++)
             {
                 printf("%c",e[i]);
-                //usleep(10000);
+                usleep(10000);
             }
             printf("\n\t\t-----------------\n");
             inOrder(root);  // Print all contacts using in-order traversal
@@ -431,11 +431,8 @@ X:
         goto X;
     case 6:
         break;
-
     default :
-        printf("\n\t Wrong choice.Please Try again : ");
-        usleep(1000);
-        system("cls");
-        goto X;
+        printf("\n\t\t Wrong choice.Please Try again\n\n\n");
     }
+    return 0;
 }
